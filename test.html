@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="test2.js" defer></script>
+</head>
+<body>
+
+    <div id="character_div">
+        <div class="char_piece" id="head_div">
+            <button onclick="change_character_piece(-1, 'Head')">←Head</button>
+            <img id="char_head" src="images/dark_elf_1/Head.png" alt="character_head">
+            <button onclick="change_character_piece(1, 'Head')">Head→</button>
+        </div>
+
+        <div class="char_piece" id="face_div">
+            <button id="face_left_button" onclick="change_character_piece(-1, 'Face')">←Face</button>
+            <img id="char_face" src="images/dark_elf_1/Face 01.png" alt="character_head">
+            <button id="face_right_button" onclick="change_character_piece(1, 'Face')">Face→</button>
+        </div>
+
+        <div class="char_piece" id="body_div">
+            <button id="body_left_button" onclick="change_character_piece(-1, 'Body')">←Body</button>
+            <img id="char_body" src="images/dark_elf_1/Body.png" alt="char_body">
+            <button id="body_right_button" onclick="change_character_piece(1, 'Body')">Body→</button>
+        </div>
+
+        <div class="char_piece" id="weapon_div">
+            <button id="weapon_left_button" onclick="change_character_piece(-1, 'Weapon')">←Weapon</button>
+            <img id="char_weapon" src="images/dark_elf_1/Weapon.png" alt="char_Weapon">
+            <button id="weapon_right_button" onclick="change_character_piece(1, 'Weapon')">Weapon→</button>
+        </div>
+
+        <div id="arms_div">
+            <button id="left_arm_button" onclick="change_character_piece(-1, 'Arm')">←Arms</button>
+            <div class="char_piece" id="right_arm_div">
+                <img id="char_right_arm" src="images/dark_elf_1/Right Arm.png" alt="character_arm">
+                <img id="char_right_hand" src="images/dark_elf_1/Right Hand.png" alt="character_arm">
+            </div>
+            <div class="char_piece" id="left_arm_div">
+                <img id="char_left_arm" src="images/dark_elf_1/Left Arm.png" alt="character_arm">
+                <img id="char_left_hand" src="images/dark_elf_1/Left Hand.png" alt="character_arm">
+            </div>
+            <button id="right_arm_button" onclick="change_character_piece(1, 'Arm')">Arms→</button>
+        </div>
+
+        <div class="char_piece" id="leg_div">
+            <button id="left_leg_button" onclick="change_character_piece(-1, 'Leg')">←Leg</button>
+            <img id="char_right_leg" src="images/dark_elf_1/Right Leg.png" alt="character_leg">
+            <img id="char_left_leg" src="images/dark_elf_1/Left Leg.png" alt="character_leg">
+            <button id="right_leg_button" onclick="change_character_piece(1, 'Leg')">Leg→</button>
+        </div>
+
+
+        <!-- <div class="char_piece" id="leg_div">
+            <button onclick="change_character_piece(char_leg, -1, 'Leg')">←</button>
+            <img id="char_leg" src="images/dark_elf_1/Left Leg.png" alt="character_head">
+            <button onclick="change_character_piece(char_leg, 1, 'Leg')">→</button>
+        </div> -->
+    </div>
+</body>
+</html>
