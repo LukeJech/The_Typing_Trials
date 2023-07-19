@@ -4,24 +4,6 @@ body {
     background-size: cover;
 
 }
-/* Canvas styling */
-/* #character_canvas {
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
-  }
-
-#head_div {
-    width: 15%;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translateX(50%);
-    display: flex;
-    justify-content: space-between;
-}
-   */
 
 button {
     z-index: 25;
@@ -34,16 +16,13 @@ button {
     height: 25rem;
     margin: 15% auto;
     background-color: rgba(0,0,0,.3);
+    border: 2px solid salmon;
 
 }
+/* Character vector image sizing & positioning */
 
-.char_piece {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#head_div {
+#char_head {
+    width: 200px;
     position: absolute;
     top: .1rem;
     left: 50%;
@@ -51,25 +30,37 @@ button {
     z-index: 15;
 }
 
-#face_div {
+#char_body, #char_face {
+    width: 133.33px;
+}
+
+#char_face {
     position: absolute;
     top: 5.6rem;
-    left: 6.1rem;
+    left: 12.1rem;
     z-index: 20;
 }
 
-#body_div {
+#char_body {
     position: absolute;
     top: 8rem;
-    left: 7.1rem;
+    left: 10.8rem;
     z-index: 5;
 }
 
-#weapon_div {
+#char_weapon {
+    width: 166.666px;
+    transform: rotate(-20deg);
     position: absolute;
     top: 10.5rem;
-    left: 4.2rem;
+    right: 4.3rem;
     z-index: 0;
+}
+
+.grouped_char_piece {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #left_arm_div {
@@ -84,30 +75,6 @@ button {
     left: 11.7rem;
     z-index: 10;
 }
-
-#leg_div {
-    position: absolute;
-    top: 12.5rem;
-    left: 9rem;
-    z-index: 0;
-}
-
-
-
-
-#char_head {
-    width: 200px;
-}
-
-#char_body, #char_face {
-    width: 133.33px;
-}
-
-#char_weapon {
-    width: 166.666px;
-    transform: rotate(-20deg);
-}
-
 
 #char_left_arm {
     position: absolute;
@@ -135,17 +102,11 @@ button {
     width: 53.33px;
 }
 
-#left_arm_button {
+#leg_div {
     position: absolute;
-    top: 13.5rem;
-    left: 8rem;
-    z-index: 25;
-}
-
-#right_arm_button {
-    position: absolute;
-    top: 13.5rem;
-    left: 18.5rem;
+    top: 12.9rem;
+    left: 12.1rem;
+    z-index: 0;
 }
 
 #char_left_leg {
@@ -158,21 +119,35 @@ button {
     margin-left: .5rem;
 }
 
-#left_leg_button, #right_leg_button{
-    margin-top: 3rem;
+/* Button position for character builder */
+
+.button_left {
+    left: 0;
+}
+.button_right {
+    right: 0;
+}
+.char_button {
+    position: absolute;
 }
 
-#face_left_button {
-    margin-right: 2.5rem;
+.head_button {
+    top: 5rem;
 }
 
-#weapon_left_button, #weapon_right_button{
-    margin-top: -3.5rem;
-}
-#weapon_left_button{
-    margin-right: 6rem;
+.face_button {
+    top: 7rem;
 }
 
-#body_right_button{
-    margin-left: 6rem;
+.weapon_button {
+    top: 9rem;
+}
+.body_button {
+    top: 11rem;
+}
+.arm_button {
+    top: 13rem;
+}
+.leg_button {
+    top: 15rem;
 }
