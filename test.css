@@ -1,0 +1,178 @@
+body {
+    background-image: url('images/game_background_33.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* Canvas styling */
+/* #character_canvas {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+  }
+
+#head_div {
+    width: 15%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    justify-content: space-between;
+}
+   */
+
+button {
+    z-index: 25;
+}
+   
+
+#character_div {
+    position: relative;
+    width: 30rem;
+    height: 25rem;
+    margin: 15% auto;
+    background-color: rgba(0,0,0,.3);
+
+}
+
+.char_piece {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#head_div {
+    position: absolute;
+    top: .1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+}
+
+#face_div {
+    position: absolute;
+    top: 5.6rem;
+    left: 6.1rem;
+    z-index: 20;
+}
+
+#body_div {
+    position: absolute;
+    top: 8rem;
+    left: 7.1rem;
+    z-index: 5;
+}
+
+#weapon_div {
+    position: absolute;
+    top: 10.5rem;
+    left: 4.2rem;
+    z-index: 0;
+}
+
+#left_arm_div {
+    position: absolute;
+    top: 11.4rem;
+    left: 15.4rem;
+    z-index: 1;
+}
+#right_arm_div {
+    position: absolute;
+    top: 11.9rem;
+    left: 11.7rem;
+    z-index: 10;
+}
+
+#leg_div {
+    position: absolute;
+    top: 12.5rem;
+    left: 9rem;
+    z-index: 0;
+}
+
+
+
+
+#char_head {
+    width: 200px;
+}
+
+#char_body, #char_face {
+    width: 133.33px;
+}
+
+#char_weapon {
+    width: 166.666px;
+    transform: rotate(-20deg);
+}
+
+
+#char_left_arm {
+    position: absolute;
+    z-index: 5;
+    width: 53.33px;
+}
+
+#char_left_hand {
+    position: absolute;
+    top: .3rem;
+    left: .2rem;
+    width: 53.33px;
+}
+
+#char_right_arm {
+    position: absolute;
+    z-index: 5;
+    width: 53.33px;
+}
+
+#char_right_hand {
+    position: absolute;
+    top: 0rem;
+    left: -.2rem;
+    width: 53.33px;
+}
+
+#left_arm_button {
+    position: absolute;
+    top: 13.5rem;
+    left: 8rem;
+    z-index: 25;
+}
+
+#right_arm_button {
+    position: absolute;
+    top: 13.5rem;
+    left: 18.5rem;
+}
+
+#char_left_leg {
+    width: 53.33px;
+    margin-left: -1rem;
+
+}
+#char_right_leg {
+    width: 53.33px;
+    margin-left: .5rem;
+}
+
+#left_leg_button, #right_leg_button{
+    margin-top: 3rem;
+}
+
+#face_left_button {
+    margin-right: 2.5rem;
+}
+
+#weapon_left_button, #weapon_right_button{
+    margin-top: -3.5rem;
+}
+#weapon_left_button{
+    margin-right: 6rem;
+}
+
+#body_right_button{
+    margin-left: 6rem;
+}
